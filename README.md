@@ -27,5 +27,7 @@ This project is a real-time sign language interpreter(asl) that uses Mediapipe t
 . 2D landmark coordinates are extracted (21 points).  
 . These points are passed through a trained ANN classifier.  
 . The predicted word is shown on-screen and printed via a dot matrix.  
-. Users can click to look up the meaning of the predicted word.
+. Users can click on "Meaning" to look up the meaning of the predicted word.  
+. A 5 second timer is set when the hand goes out of frame and if no hand is captured during this time frame then the word is passed to the esp32 and the feature to look up the meaning is visible.  
+. To make sure the model doesnt predict gibberish some frames are ignored after the hand first re-enters the screen.  
 
