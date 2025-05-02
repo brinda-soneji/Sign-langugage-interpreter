@@ -23,8 +23,8 @@
 //----------------------------------------
 
 //----------------------------------------Variable declaration for network credentials.
-const char* ssid = "vivo V25 Pro";  //--> wifi name
-const char* password = "Bus030406"; //--> wifi password
+const char* ssid = "vivo V25 Pro";  //--> wifi name, you need to enter your ssid and password here to configure your esp32 
+const char* password = "pass"; //--> wifi password
 //----------------------------------------
 
 int cnt_Text = 0;
